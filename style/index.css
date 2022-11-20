@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html - estructura */
+html{
+    height: 100%;
+}
+
+/* body - contenedor principal */
+body{
+    min-height: 100%;
+    display: grid;
+    background-color: #000E50;
+    color: white;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 20% auto 15%;
+    font-size: 62.7%;
+}
+
+/* header - cabecera */
+.header{
+    grid-area: header;
+}
+/* nav - menu de navegacion */
+.nav{
+    margin:  2%;
+}
+.nav ul{
+    text-align: end;
+}
+/* li - listas */
+.nav ul li{
+    display: inline;
+    list-style-type: none;
+    margin: -1%;
+}
+.mismo_color{ 
+    font-size: 1.5rem;
+    color: #000E50;
+    text-decoration: none;
+    background-color: #BADFEF;
+    padding: 2% 5%;
+    text-shadow: .1em .1em .2em #000E50;
+}
+.inicio{
+    background-color: white;
+    color: #000E50;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 2% 5%;
+    text-shadow: .1em .1em .2em #000E50;
+}
+.nav ul li a:hover{
+    background-color: white;
+    transition: .9s;
+}
+
+/* main - contenido principal */
+.main{
+    grid-area: main;
+    text-align: center;
+}
+.main h1{
+    font-size: 2.5rem;
+    margin: 10% auto;
+}
+.main hr{
+    padding: .1em;
+    background-color: white;
+    margin: 8em 10em 5em;
+    border-radius: 1em;
+}
+.main h2{
+    font-size: 4em;
+}
+.main h3{
+    font-size: 3em;
+    text-decoration: line-through;
+    margin-top: 3% ;
+}
+/* footer - pie de pagina */
+.footer{
+    grid-area: footer;
+    margin: auto;
+    text-align: center;
+}
+.footer p{
+    font-size: 2em;
+}
+@media (max-width:600px) {
+    /* header - cabecera */
+.header{
+    grid-area: header;
+    margin: 7% auto 0;
+}
+/* nav - menu de navegacion */
+.nav{
+    text-align: center;
+}
+/* li - listas */
+.nav ul li{
+    display: block;
+    list-style-type: none;
+    padding: 2%;
+    margin: 2% auto;
+    text-align: center;
+}
+.nav ul li a{ 
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 2%;
+}
+.nav ul li a:hover{
+    background-color: white;
+    color: #000E50;
+    border-radius: 1vw;
+}
+
+/* main - contenido principal */
+.main h1{
+    font-size: 2.3em;
+    margin: 35% auto 0%;
+}
+.main hr{
+    margin-bottom: 30% auto;
+}
+.main h2{
+    font-size: 2em;
+
+}
+.main h3{
+    font-size: 2.2em;
+}
+
+/* footer - parrafo */
+.footer p{
+    font-size: 2em;
+}
+}
